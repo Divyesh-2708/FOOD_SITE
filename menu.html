@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Divyesh Solanki</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="icon" href="./image/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <style>
+      *{
+        margin: 0%;
+        padding: 0%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        /*color: #D3D04F;*/
+      }
+      body{
+        background: #17594A;
+      }
+      .nav-justified,.navbar-toggler{
+        background: #D3D04F;
+      }
+      .fa-instagram, .fa-whatsapp{
+        color: #D3D04F;
+      }
+      ul{
+        list-style-type:none;
+      }
+      .nav-link{
+        
+        color: #17594A;
+        size: 3rem;
+        font-weight: 500;
+        font-family: 'Times New Roman', Times, sans-serif;
+      }
+      .nav-link:hover{
+        background:#17594A;
+        color: #D3D04F;
+      }
+      .fa-apple{
+        color: #17594A;
+        margin-bottom: 5px;
+      }
+      .sec1 .sec2{
+        height: 100vh;
+      }
+      .sec3, footer{
+        color: #D3D04F;
+      }
+
+      .cardimg{
+        width: 200px;
+        animation: rotation 4s infinite linear;
+      }
+      @keyframes rotation {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .footer-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+      }
+      @media (min-width:500px) {
+        .menulbl{
+            font-size: 200px;
+        }
+      }
+      .menulbl{
+        font-size: 100px;
+        font-weight: 700;
+        text-decoration: none;
+        color: rgb(240, 58, 58);
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+      .lable_menu{
+        position: relative;
+        display: flex;
+        justify-content: center;
+      }
+      .menuimg{
+        position: absolute;
+        top: 55px;
+        z-index: 0;
+      }
+      .card-column{
+        color: solid #000 ;
+      }
+      .hr{
+        width: 70%;
+        margin-top: 1px;
+        border-top: 10px solid #D3D04F ;
+        color: #D3D04F;
+        border-color: #D3D04F;
+      }
+      .copyright{
+        background-color: rgb(44, 44, 44);
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      .card{
+        background:#17594A;
+        border: solid #D3D04F;
+        color: #D3D04F;
+      }
+      .card:hover{
+        background:#D3D04F;
+        border: solid #17594A;
+        color: #17594A;
+      }
+      .card .btn{
+        border: #17594A solid;
+        color: #17594A;
+        background: #D3D04F;
+      }
+      .card .btn:hover{
+        border:  solid #17594A;
+        color: #D3D04F;
+        background: #17594A;
+      }
+      .card-column{
+        color: solid #000 ;
+      }
+      .menu-nav{
+        background: #17594A;
+        color: #D3D04F;
+      }
+      .menu-nav:hover{
+        color: #17594A;
+        background:#D3D04F;
+      }
+      .tab-pane{
+        text-align: center;
+        color: #D3D04F;
+      }
+      .popup {
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+            display: none;
+        }
+        .popup-content {
+            background-color: white;
+            margin: 10% auto;
+            padding: 20px;
+            border: 1px solid #888888;
+            width: 90%;
+            font-weight: bolder;
+        }
+        .popup-content button {
+            display: block;
+            margin: 0 auto;
+        }
+        .show {
+            display: block;
+        }
+        .notification {
+          position: fixed; 
+          bottom: 40px; 
+          right: 40px; 
+          background-color: #D3D04F;
+          color: #17594A;
+          text-decoration: none;
+          padding: 7px 8px;
+          display: inline-block;
+          border-radius: 2px;
+        }
+        .notification .btn{
+          position: relative;
+          color: #17594A;
+          font-size: 1rem;
+        }
+        .hidden {
+          display: none;
+        }
+        .visible {
+          display: inline-block;
+          background-color: red;
+          color: white;
+          padding: 5px;
+          border-radius: 50%;
+          font-size: 12px;
+          position: absolute;
+          top: -10px;
+          right: -10px;
+        }
+    </style>
+  </head>
+  <body> 
+    <div class="pos-f-t header">
+      <nav class="navbar navbar-light bg-transparent ">
+        <button class="navbar-toggler" type="button" data-toggle="collapse"  data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="brand">
+          <a href="index.html" style="font-size: 50px; color:#D3D04F;text-decoration: none;">DS</a>
+        </div>
+        <div class="social">
+          <a href="http://instagram.com" class="nav-link fa-2x"><i class="fa fa-instagram active" aria-hidden="true"></i></a>
+        </div>
+      </nav>
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="nav nav-justified ">
+          <div class="menu-img fa-4x ml-2 mt-4 ml-lg-5 mr-lg-5 mr-2">
+            <i class="fa fa-apple " aria-hidden="true"></i>
+          </div>
+          <ul class="nav-item mt-3">
+            <li>
+              <a class="nav-link active " href="index.html">HOME</a>
+            </li>
+            <li>
+              <a href="about.html" class="nav-link active">ABOUT</a>
+            </li>
+            <li>
+              <a href="menu.html" class="nav-link active">MENU</a>
+            </li>
+          </ul>
+          <div class="menu-img fa-4x ml-2 mt-4 ml-lg-5 mr-lg-5 mr-2">
+            <i class="fa fa-apple"  aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main>
+      <center>
+      <section class="sec1 container mt-5">
+        <div class="lable_menu ">
+          <h1 class="menulbl fs-1" >MENU</h1>
+          <p class="menuimg"><img src="./image/open-book_318-743921.avif" alt="menuimg" width="100px" srcset=""></p>
+        </div>
+        <!-- <div class="siteimgdiv">
+          <img src="../../../CANVAS/CANVAS/images/12.png" class="siteimg siteimg-lg-4 align-content-lg-center"  alt="">
+        </div> -->
+      </section>
+      <section class="sec2">
+        <div class="menulbl">
+            <h3 class="lbl1st mt-5">Ready To Eat</h3>
+            <hr class="hr">
+        </div>
+            <!-- Nav pills -->
+    <ul class="nav col-lg-6 col-11 col-sm-4"  role="tablist">
+      <li class="nav-item">
+        <a class="nav-link menu-nav" onclick="" data-toggle="pill" href="#menu">VADAPAV</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link menu-nav" data-toggle="pill" href="#menu1">ULTA/PULTA</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link menu-nav" data-toggle="pill" href="#menu2">BREAD PAKORA</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link menu-nav" data-toggle="pill" href="#menu3">FRENKEE</a>
+      </li>
+      <li class="nav-item menu-nav">
+        <a class="nav-link menu-nav" data-toggle="pill" href="#menu4">MOMOSE</a>
+      </li>
+      <li class="nav-item menu-nav">
+        <a class="nav-link menu-nav" data-toggle="pill" href="#menu5">COLD DRINKS</a>
+      </li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content d-inline d-inline col-lg-10">
+      <div id="menu" class="container tab-pane active col-lg-10"><br>
+        <h3>VADAPAV</h3>
+        <div class="product-item-container col-lg-12 d-inline ">
+            <div id="accordion0">
+            </div>
+        </div>
+      </div>
+      <div id="menu1" class="container tab-pane col-lg-10 "><br>
+        <h3>UPLTA/PULTA</h3>
+        <div class="product-item-containercol-lg-12 d-inline-block ">
+          <div id="accordion1">
+          </div>
+        </div>
+
+      </div>
+      <div id="menu2" class="container tab-pane fade col-lg-10"><br>
+        <h3>BREAD PAKORA</h3>
+        <div class="product-item-container col-lg-12 d-inline-block">
+        <div id="accordion2">
+             
+        </div></div>
+
+      </div>
+      <div id="menu3" class="container tab-pane fade col-lg-10"><br>
+        <h3>FRENKEE</h3>
+        <div class="product-item-container col-lg-12 d-inline-block">
+          <div id="accordion3">
+             
+          </div>
+        </div>
+
+      </div>
+      <div id="menu4" class="container tab-pane fade col-lg-10"><br>
+        <h3>MOMOSE</h3>
+        <div class="product-item-container col-lg-12 d-inline-block ">
+          <div id="accordion4">
+             
+          </div>
+        </div>
+
+      </div>
+      <div id="menu5" class="container tab-pane fade col-lg-10"><br>
+        <h3>COLD DRINKS</h3>
+        <div class="product-item-container col-lg-12 d-inline-block ">
+          <div id="accordion5">
+             
+          </div>
+        </div>
+
+      </div>
+    </div>
+      <secion class="sec3" style="margin-top: 200px;">
+        <hr class="hr mt-5">
+        <h2>Quick Parcel</h2>
+        <p>*IF YOU WANT TO GET YOUR PARCEL READY AT THE TIME YOU REACH SHOP*</p>
+        <p>Just Order your food by whatsapping us Choose your items and go on cart and click on WhatsApp button to send order</p>
+        <hr class="hr mt-5">
+      </secion>
+    </center>
+    </main>
+    <div class="cart" >
+      <di class="title1">
+          <div class="notification">
+            <button type="button" id="myButton" class="btn" data-toggle="button" aria-pressed="false" autocomplete="off"><i class="fa fa-cart-plus fa-2x" aria-hidden="true"></i></button>
+            <span id="notification" class="hidden">0</span>
+          </div>
+          <div id="myPopup" class="popup">
+              <div class="popup-content ">
+                <div class="title">Cart</div>
+                <hr>
+                <table>
+                <div id="title">
+                    
+                </div>
+                </table>
+                <div class="send">
+                    <p>Just Order your food by whatsapping us here <span style='font-size:50px;'>&rarr;</span>
+                    <a href="https://wa.me/6351585391" type="_blank" onclick="sendMessage()" ><i class="fa fa-whatsapp fa-3x text-success"aria-hidden="true"></i></a></p>
+                    <sub class="text-danger">click on whatsapping button and order your food*</sub>
+                </div>
+                  <button id="closePopup"  class="btn-primary">
+                    Close
+                  </button>
+                </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <footer class="footer-content">
+        <h1 class="cntct text-decoration-underline">OPENING HOURS</h1>
+        <p><em>MONDAY  TO FRIDAY</em><em> 9:00 AM to 11:00 PM</em></p>
+        <p><em>SATURDAY TO SUNDAY</em><em> 9:00 AM to 11:00 PM</em></p>
+        <foot class="copyright">
+            <i class="fa fa-copyright" aria-hidden="true"></i><em> by Divyesh Solanki</em>
+        </foot>
+    </footer>
+    <!-- Optional JavaScript -->
+    <script src="./card.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
